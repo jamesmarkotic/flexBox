@@ -13,8 +13,40 @@ ul {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
+	/* display: flex;
+	flex-flow: row wrap; */
 }
-@media (min-width: 550px) {
+/* li {
+	background-color: lightblue;
+	flex: auto;
+	border: 1px solid grey;
 }
-@media (min-width: 850px) { 
+img {
+	width: 100%;
+} */
+/* Flexbox Grid System */
+.wrapper {
+	width: 100%;
 }
+.row {
+	display: flex;
+	flex-flow: row wrap;
+	flex: 0 0 96%;
+}
+[class*="col"] {
+	/* margin: 0 0 4% 4%; */
+	/* background-color: lightblue; */
+}
+/* End of Grid System */
+
+@media (min-width: 605px) {
+	.col {
+		flex: 0 0 50%;
+	}
+}
+@media (min-width: 910px) {
+	.col {
+		flex: 0 0 33%;
+	}
+}
+

@@ -41,10 +41,12 @@ http://stackoverflow.com/questions/13104818/simple-2-column-navigation-with-css-
 nav li:nth-child(even) {
   flex: 0 0 50%;
   padding: 0.5em;
+  float: right;
 }
 nav li:nth-child(odd) {
   flex: 0 0 50%;
   padding: 0.5em;
+  float: left;
 }
 nav a {
   color: #c80060;
@@ -69,14 +71,14 @@ div.row {
   border-bottom-right-radius: 10px;
   padding: 1em;
 }
-/* .floatleft {
+.floatleft {
   float: left;
   margin: 0 1em 1em 0;
 }
 .floatright {
   float: right;
   margin: 0 0 1em 1em;
-} */
+}
 [class*='sidebar'] {
   border: 1px solid #00c4c7;
   border-radius: 10px;
@@ -192,8 +194,12 @@ aside[class*='sidebar'] {
     width: auto;
     padding: 0;
   }
+  
   nav a {
       padding: 0em 1em 0em 1em;
+  }
+  .mWidth {
+    flex-flow: column;
   }
 }
 /* Large devices (large desktops, 1200px and up) */
