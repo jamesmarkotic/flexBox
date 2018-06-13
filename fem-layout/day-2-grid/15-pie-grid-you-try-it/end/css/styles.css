@@ -168,6 +168,14 @@ footer a {
       max-width: 1200px;
       float: none;
   }
+
+  .content {
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 3em;
+ }
+.aside {
+ display: block;
+}
   h2 {
     font-size: 3em;
     border-bottom: 2px dotted #c80060;
@@ -185,13 +193,4 @@ footer a {
     width: auto;
     padding: 0;
   }
-  .content {
-       grid-template-columns: 3fr 1fr;
-       grid-gap: 3em;
-    }
-  .aside {
-    display: block;
-  }
-
-
 }
