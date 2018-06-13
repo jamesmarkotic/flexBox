@@ -25,9 +25,14 @@ article img {
   width: 100%;
   max-width: 250px;
 }
+
 .bkgdimg {
   height: 12px;
     background: url(../img/scallop.png) repeat-x ;
+}
+.piegallery ul {
+  padding: 0;
+  list-style-type: none;
 }
 nav ul {
   list-style-type: none;
@@ -59,7 +64,7 @@ nav a:hover {
   color:#00c4c7;
 }
 
-.content {
+.content, .piegallery {
   background-color: #fff6e0;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -128,14 +133,27 @@ footer a {
   color: white;
   text-decoration: none;
 }
-/* grid system */
-
+/* grid system (flex) */
+.piegallery ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+.piegallery ul li {
+  flex: 0 0 100%;
+}
+figure img {
+  width: 100%;
+  border-radius: 10px;
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 550px) { 
   .wrapper {
       width: 97%;
       max-width: 767px;
+  }
+  .piegallery ul li {
+    flex: auto;
   }
 
  nav li,
